@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
-        <title>B4DDocumentation Blog</title>
+        <title>B4D Documentation Blog</title>
         <link>https://mrzak-dev.github.io/B4DDocumentation/blog</link>
-        <description>The best place to stay up-to-date with the latest B4DDocumentation news and events.</description>
+        <description>The best place to stay up-to-date with the latest B4D Documentation news and events.</description>
         <lastBuildDate>Tue, 24 Oct 2017 06:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
-            <title>B4DDocumentation Blog</title>
+            <title>B4D Documentation Blog</title>
             <url>https://mrzak-dev.github.io/B4DDocumentation/img/favicon.ico</url>
             <link>https://mrzak-dev.github.io/B4DDocumentation/blog</link>
         </image>
-        <copyright>Copyright B4d Network © 2020 Your Name or Your Company Name</copyright>
+        <copyright>Copyright B4D Network © 2020</copyright>
         <item>
             <title><![CDATA[New Version 1.0.0]]></title>
             <link>https://mrzak-dev.github.io/B4DDocumentation/blog/2017/10/24/new-version-1.0.0.html</link>

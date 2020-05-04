@@ -1,0 +1,95 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Test And Run Your Game · B4D Documentation</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&gt; In This Documentation We Will Test And Run the Game On **Desktop** First Then we will "/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Test And Run Your Game · B4D Documentation"/><meta property="og:type" content="website"/><meta property="og:url" content="https://mrzak-dev.github.io/B4DDocumentation/"/><meta property="og:description" content="&gt; In This Documentation We Will Test And Run the Game On **Desktop** First Then we will "/><meta property="og:image" content="https://mrzak-dev.github.io/B4DDocumentation/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://mrzak-dev.github.io/B4DDocumentation/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/B4DDocumentation/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/B4DDocumentation/js/scrollSpy.js"></script><link rel="stylesheet" href="/B4DDocumentation/css/main.css"/><script src="/B4DDocumentation/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/B4DDocumentation/"><img class="logo" src="/B4DDocumentation/img/favicon.ico" alt="B4D Documentation"/><h2 class="headerTitleWithLogo">B4D Documentation</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/B4DDocumentation/docs/godot_installation" target="_self">Docs</a></li><li class="siteNavGroupActive"><a href="/B4DDocumentation/docs/godot_installation" target="_self">API</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Space Rider</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Space Rider</h3><ul class=""><li class="navListItem"><a class="navItem" href="/B4DDocumentation/docs/godot_installation">Godot Installation</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/B4DDocumentation/docs/test_and_run">Test And Run Your Game</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Test And Run Your Game</h1></header><article><div><span><blockquote>
+<p>In This Documentation We Will Test And Run the Game On <strong>Desktop</strong> First Then we will
+<strong>Export</strong> it To Android .</p>
+</blockquote>
+<blockquote>
+<p>Be Sure to check the <strong>previous</strong> documentation before going any further .</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="testing-on-desktop"></a><a href="#testing-on-desktop" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Testing on Desktop</h2>
+<ul>
+<li>After You have imported your game project in the engine , you should be able to Run and Test your Game On Desktop .</li>
+</ul>
+<p><img src="https://i.imgur.com/E1CHnhs.png" alt="&quot;run&quot;"></p>
+<ul>
+<li>Your game will be opened in a new window , and if there are errors you can check the <strong>output</strong> and <strong>debug</strong> tabs</li>
+</ul>
+<p><img src="https://i.imgur.com/QwtVx4Y.png" alt="&quot;game running&quot;"></p>
+<h2><a class="anchor" aria-hidden="true" id="exporting-to-android"></a><a href="#exporting-to-android" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Exporting to <strong>Android</strong></h2>
+<blockquote>
+<p>To Run your game on android device we need to download first (<strong>Visual Studio</strong> , <strong>Android Sdk</strong> and <strong>Java Jdk</strong>)</p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="download-and-install-java"></a><a href="#download-and-install-java" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Download And Install Java</h3>
+<ul>
+<li>Download The <strong>Java Jdk</strong> From This <a href="https://www.oracle.com/java/technologies/javase-downloads.html"><strong>Link</strong></a></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="download-visual-studio"></a><a href="#download-visual-studio" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Download Visual Studio</h3>
+<blockquote>
+<p>Microsoft has a great free tool to edit C# Project ,  <strong>Visual Studio Community</strong></p>
+</blockquote>
+<ol>
+<li><p>Downlaod Visual Studio From This <a href="https://visualstudio.microsoft.com/vs/"><strong>Link</strong></a></p></li>
+<li><p>Be sure to check Mobile Development in Installation , an <strong>Android Sdk</strong> will be <strong><em>automatically</em></strong> installed with Visual Studio</p></li>
+</ol>
+<p><img src="https://i.imgur.com/vnT5WQ4.png" alt="&quot;Vs Installer&quot;"></p>
+<h3><a class="anchor" aria-hidden="true" id="export-and-run-your-game-on-android"></a><a href="#export-and-run-your-game-on-android" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Export And Run Your Game On Android</h3>
+<blockquote>
+<p><strong><em>After installing These Tools you are ready to run your game on android Check The Video Below</em></strong></p>
+</blockquote>
+<p><a href="http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE"><img src="https://drive.google.com/uc?id=1qeCIFCagS_WFAFZiEKrmdiVJfRY991OC" alt="IMAGE ALT TEXT HERE"></a></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/B4DDocumentation/docs/godot_installation"><span class="arrow-prev">← </span><span>Godot Installation</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#testing-on-desktop">Testing on Desktop</a></li><li><a href="#exporting-to-android">Exporting to <strong>Android</strong></a><ul class="toc-headings"><li><a href="#download-and-install-java">Download And Install Java</a></li><li><a href="#download-visual-studio">Download Visual Studio</a></li><li><a href="#export-and-run-your-game-on-android">Export And Run Your Game On Android</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/B4DDocumentation/" class="nav-home"><img src="/B4DDocumentation/img/favicon.ico" alt="B4D Documentation" width="66" height="58"/></a><div><h5>Docs</h5><a href="/B4DDocumentation/docs/en/godot_installation.html">Space Rider Documentation</a></div><div><h5>Community</h5><a href="https://codecanyon.net/user/b4dnetwork">CodeCanyon</a></div></section><section class="copyright">Copyright B4D Network © 2020</section></footer></div></body></html>
