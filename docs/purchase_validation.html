@@ -1,0 +1,73 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Purchase Validation · B4D Documentation</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## Validate your item and get a license key"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Purchase Validation · B4D Documentation"/><meta property="og:type" content="website"/><meta property="og:url" content="https://mrzak-dev.github.io/B4DDocumentation/"/><meta property="og:description" content="## Validate your item and get a license key"/><meta property="og:image" content="https://mrzak-dev.github.io/B4DDocumentation/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://mrzak-dev.github.io/B4DDocumentation/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/B4DDocumentation/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/B4DDocumentation/js/scrollSpy.js"></script><link rel="stylesheet" href="/B4DDocumentation/css/main.css"/><script src="/B4DDocumentation/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/B4DDocumentation/"><img class="logo" src="/B4DDocumentation/img/favicon.ico" alt="B4D Documentation"/><h2 class="headerTitleWithLogo">B4D Documentation</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/B4DDocumentation/docs/godot_installation" target="_self">Docs</a></li><li class="siteNavGroupActive"><a href="/B4DDocumentation/docs/godot_installation" target="_self">API</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Purchase Validation</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Purchase Validation</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/B4DDocumentation/docs/purchase_validation">Purchase Validation</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Space Rider</h3><ul class=""><li class="navListItem"><a class="navItem" href="/B4DDocumentation/docs/godot_installation">Godot Installation</a></li><li class="navListItem"><a class="navItem" href="/B4DDocumentation/docs/test_and_run">Test And Run Your Game</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Purchase Validation</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="validate-your-item-and-get-a-license-key"></a><a href="#validate-your-item-and-get-a-license-key" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Validate your item and get a license key</h2>
+<blockquote>
+<p>In order to get the license key to run your game visit this <a href="http://b4dnetwork.com/Validation/"><strong>LINK</strong></a></p>
+</blockquote>
+<p>1- Login using your <strong><em>Envato</em></strong> Account used to buy the <strong>Item</strong></p>
+<p><img src="https://drive.google.com/uc?id=15gr5t1is-enH8XWEaPmb1IIiXb3VUAgX" alt="B4D Validation Login"></p>
+<p>2- After login you should be able to get your license key</p>
+<p><img src="https://drive.google.com/uc?id=19E2DprrokCd0EjJ6MNgBhnTm0ogeoiX_" alt="B4D Validation"></p>
+<blockquote>
+<p>The Purchase code is delivered to you by <strong>envato</strong>
+The <strong>Package Name</strong> is the one you want to use with your game in the <a href="test_and_run#export-and-run-your-game-on-android"><strong>Export To Android</strong></a>  Process.</p>
+</blockquote>
+<p>3- After filling the forms with your item , package name and your purchase , you will se a license key generated at the bottom , click on the form and <strong>CTRL + A</strong> to select all , then <strong>Copy</strong> and keep it safe in a <strong>txt</strong> file .</p>
+<blockquote>
+<p>you will need your license key to create your game .</p>
+</blockquote>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-next button" href="/B4DDocumentation/docs/godot_installation"><span>Godot Installation</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#validate-your-item-and-get-a-license-key">Validate your item and get a license key</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/B4DDocumentation/" class="nav-home"><img src="/B4DDocumentation/img/favicon.ico" alt="B4D Documentation" width="66" height="58"/></a><div><h5>Docs</h5><a href="/B4DDocumentation/docs/en/godot_installation.html">Space Rider Documentation</a><a href="http://b4dnetwork.com/Validation/">Purchase Validation</a></div><div><h5>Community</h5><a href="https://codecanyon.net/user/b4dnetwork">CodeCanyon</a></div></section><section class="copyright">Copyright B4D Network © 2020</section></footer></div></body></html>
