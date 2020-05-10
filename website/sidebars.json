@@ -1,0 +1,14 @@
+{
+  "docs": {
+    "Purchase Validation": [
+      "purchase_validation"
+    ],
+    "Space Rider": [
+      "godot_installation",
+      "test_and_run"
+    ]
+  },
+  "docs-other": {
+    "First Category": ["doc4", "doc5"]
+  }
+}
