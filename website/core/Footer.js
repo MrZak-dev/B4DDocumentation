@@ -40,7 +40,7 @@ class Footer extends React.Component {
             <a href={this.docUrl('godot_installation.html', this.props.language)}>
               Space Rider Documentation
             </a>
-            <a href="http://b4dnetwork.com/Validation/">
+            <a href="https://b4dnetwork.com/Validation/">
               Purchase Validation
             </a>
             {/* <a href={this.docUrl('doc3.html', this.props.language)}>

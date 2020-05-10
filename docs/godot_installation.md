@@ -8,9 +8,20 @@ title: Godot Installation
 
 ## Downloads
 
-### Mono sdk
+### Download Visual Studio 
+
+> Microsoft has a great free tool to edit C# Project ,  **Visual Studio Community**
+
+1. Downlaod Visual Studio From This [**Link**](https://visualstudio.microsoft.com/vs/)
+
+2. Be sure to check Mobile Development in Installation , an **Android SDK** will be **_automatically_** downloaded with Visual Studio ,
+and we will need it to export the game to **Android**
+
+!["Vs Installer"](https://i.imgur.com/vnT5WQ4.png)
+
+<!-- ### Mono SDK
 * Godot Engine mono version requires the Mono sdk to be installed on your PC so we can use The engine with **.Net C#** language
-You can download Mono Sdk From This [**Links**](https://www.mono-project.com/download/stable/)
+You can download Mono SDK From This [**Links**](https://www.mono-project.com/download/stable/) -->
 
 ### Godot Engine 
 * First we have to download the game engine From this [**Link**](https://downloads.tuxfamily.org/godotengine/3.2.2/)
@@ -25,7 +36,7 @@ You can download Mono Sdk From This [**Links**](https://www.mono-project.com/dow
 
 ## Installation
 
-* After Downloading Godot Engine and installing the Mono sdk now we can **Import** Our Game And start **_Editing_** 
+* After Downloading Godot Engine and installing **Visual Studio** now we can **Import** Our Game And start **_Editing_** 
 
 * Press import button from Godot Project Manager Window
 

@@ -5,7 +5,7 @@ title: Purchase Validation
 
 ## Validate your item
 
-> In order to get the license key to run your game visit this [**LINK**](http://b4dnetwork.com/Validation/)
+> In order to get the license key to run your game visit this [**LINK**](https://b4dnetwork.com/Validation/)
 
 1- Login using your **_Envato_** Account used to buy the **Item** 
 
