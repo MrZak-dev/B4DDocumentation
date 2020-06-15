@@ -1,12 +1,12 @@
 ---
 id: test_and_run
-title: Test And Run Your Game
+title: Game APK Export
 ---
 
 > In This Documentation We Will Test And Run the Game On **Desktop** First Then we will 
 **Export** it To Android .
 
-> Be Sure to check the **previous** documentation before going any further .
+> Be Sure to check the [**Set-Up**](/Documentation/docs/godot_installation#godot-setup) documentation before going any further .
 
 ## Testing on Desktop
 
@@ -20,28 +20,28 @@ title: Test And Run Your Game
 
 ## Exporting to **Android**
 
-<!-- > To Run your game on android device we need to download first (**Visual Studio** , **Android Sdk** and **Java Jdk**)-->
+> To Run your game on android device we need to download first (**Android Studio** and **Java Jdk**)
 
-<!-- ### Download And Install Java  -->
+### Download And Install Java 
 
-<!-- * Download The **Java JDK** From This [**Link**](https://www.oracle.com/java/technologies/javase-downloads.html) -->
+* Download The **Java JDK** From This [**Link**](https://adoptopenjdk.net/)
 
-<!-- ### Download Visual Studio  -->
+### Download Android Studio 
 
-<!-- > Microsoft has a great free tool to edit C# Project ,  **Visual Studio Community** -->
+> To be able to use Android SDK's we have to Download and Install  **Android Studio**
 
-<!-- 1. Downlaod Visual Studio From This [**Link**](https://visualstudio.microsoft.com/vs/) -->
+1. Downlaod Android Studio from this [**Link**](https://developer.android.com/studio)
 
 <!-- 2. Be sure to check Mobile Development in Installation , an **Android Sdk** will be **_automatically_** installed with Visual Studio  -->
 
 <!-- !["Vs Installer"](https://i.imgur.com/vnT5WQ4.png)  -->
 
-<!-- ### Export And Run Your Game On Android -->
+### Export Your Game To Android
 
 > **_You are ready to Run/Export your game on android Check The Video Below_**
 
 
-[![IMAGE ALT TEXT HERE](https://drive.google.com/uc?id=1qeCIFCagS_WFAFZiEKrmdiVJfRY991OC)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+<iframe width="640" height="360" src="https://www.youtube.com/embed/YVHabzB6prY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 

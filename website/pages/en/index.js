@@ -67,6 +67,7 @@ class HomeSplash extends React.Component {
             {/* <Button href="#try">Try It Out</Button> */}
             <Button href={docUrl('purchase_validation.html')}>Purchase Validation</Button>
             <Button href={docUrl('godot_installation.html')}>Space Rider Documentation</Button>
+            <Button href={docUrl('htm_settings.html')}>Hit That Man Documentation</Button>
             <Button href="https://b4dnetwork.atlassian.net/servicedesk/customer/portal/1">Customer Support</Button>
             
           </PromoSection>

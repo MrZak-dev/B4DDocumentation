@@ -3,12 +3,12 @@ id: godot_installation
 title: Godot Installation
 ---
 
-> The **Space Rider** game is built using **Godot 3.2.2 mono stable**
 
 
-## Downloads
 
-### Download Visual Studio 
+## Visual Studio Setup
+
+### Install Visual Studio - Doc
 
 > Microsoft has a great free tool to edit C# Project ,  **Visual Studio Community**
 
@@ -19,13 +19,26 @@ and we will need it to export the game to **Android**
 
 !["Vs Installer"](https://i.imgur.com/vnT5WQ4.png)
 
-<!-- ### Mono SDK
-* Godot Engine mono version requires the Mono sdk to be installed on your PC so we can use The engine with **.Net C#** language
-You can download Mono SDK From This [**Links**](https://www.mono-project.com/download/stable/) -->
+### Install Visual Studio - Video
 
-### Godot Engine 
-* First we have to download the game engine From this [**Link**](https://downloads.tuxfamily.org/godotengine/3.2.2/)
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/ad8SZ4HquYE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+## Godot Setup 
+
+> The **Space Rider** game is built using **Godot 3.2.2 mono stable**
+
+### Godot Setup - Video 
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/-kScOI3fv-Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+### Godot Setup Video - Doc
+
 > Godot Engine doesn't require installation , just Download , Extract and Open . Simple !
+
+* First we have to download the game engine From this **LINKS** [**Windows 64bit**](https://downloads.tuxfamily.org/godotengine/3.2.2/beta3/mono/Godot_v3.2.2-beta3_mono_win64.zip) , For [**Windows 32bit**](https://downloads.tuxfamily.org/godotengine/3.2.2/beta3/mono/Godot_v3.2.2-beta3_mono_win32.zip) , [**Other Platfroms**](https://downloads.tuxfamily.org/godotengine/3.2.2/beta3/mono/)
 
 ![Godot Folder](https://i.imgur.com/Gvb1cva.png)
 
@@ -33,8 +46,6 @@ You can download Mono SDK From This [**Links**](https://www.mono-project.com/dow
 
 ![Godot Project manager](https://i.imgur.com/BRmExZ0.png)
 
-
-## Installation
 
 * After Downloading Godot Engine and installing **Visual Studio** now we can **Import** Our Game And start **_Editing_** 
 

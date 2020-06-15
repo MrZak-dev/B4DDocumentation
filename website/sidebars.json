@@ -5,10 +5,12 @@
     ],
     "Space Rider": [
       "godot_installation",
+      "sp_customization",
       "test_and_run"
     ]
   },
-  "docs-other": {
-    "First Category": ["doc4", "doc5"]
+  "docs2": {
+    "Game Settings": ["htm_settings"]
   }
 }
+

@@ -14,10 +14,10 @@ title: Purchase Validation
 
 2- After login you should be able to get your license key 
 
-![B4D Validation](https://drive.google.com/uc?id=19E2DprrokCd0EjJ6MNgBhnTm0ogeoiX_)
+![B4D Validation](https://drive.google.com/uc?id=1NHeNW5k5pYFkAFP_Ry9EhprJODu0YINL)
 
 > The Purchase code is delivered to you by **Envato**, 
-> the **Package Name** is the one you want to use with your game in the [**Export To Android**](test_and_run#export-and-run-your-game-on-android) Process.
+> the **Package Name** is the one you want to use with your game in the [**Export To Android**](/Documentation/docs/test_and_run#exporting-to-android) Process.
 
 3- After filling the forms with your item , package name and your purchase , you will se a license key generated at the bottom , click on the form and **CTRL + A** to select all , then **Copy** and keep it safe in a **txt** file .
 > you will need your license key to create your game .
